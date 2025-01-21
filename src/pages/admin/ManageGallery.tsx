@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImages, faTrash, faPlus } from '@fortawesome/free-solid-svg-icons';
+import {faArrowLeft, faImages, faTrash, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 interface GalleryEvent {
   id: string;
@@ -65,6 +65,7 @@ export const ManageGallery: React.FC = () => {
           onClick={() => navigate('/admin/dashboard')}
           className="mb-4 px-4 py-2 bg-[#d21533] text-white rounded-lg hover:bg-[#b01229] transition-colors"
         >
+          <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
           Back to Dashboard
         </button>
         <div className="flex items-center justify-between mb-12">

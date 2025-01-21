@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserGraduate, faTrash, faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faUserGraduate, faTrash, faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 interface Student {
   id: string;
@@ -88,6 +88,7 @@ export const ManageStudents: React.FC = () => {
           onClick={() => navigate('/admin/dashboard')}
           className="mb-4 px-4 py-2 bg-[#d21533] text-white rounded-lg hover:bg-[#b01229] transition-colors"
         >
+          <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
           Back to Dashboard
         </button>
 
