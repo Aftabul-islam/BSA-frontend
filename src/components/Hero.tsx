@@ -3,15 +3,15 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    url: '../../public/images/USD_campus.jpg',
+    url: '/images/USD_campus.jpg',
     title:"USD CAMPUS"
   },
   {
-    url: "../../public/images/Snow-Campus.jpg",
+    url: "/images/Snow-Campus.jpg",
     title: "USD CAMPUS"
   },
   {
-    url: "../../public/images/USD-44929.jpg",
+    url: "/images/USD-44929.jpg",
     title: "USD CAMPUS"
   }
 ];
