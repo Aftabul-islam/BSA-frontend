@@ -3,16 +3,16 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
-    url: "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?ixlib=rb-4.0.3&auto=format&fit=crop&q=80",
-    title: "Classical Dance Performance"
+    url: '../../public/images/USD_campus.jpg',
+    title:"USD CAMPUS"
   },
   {
-    url: "https://images.unsplash.com/photo-1516307365426-bea591f05011?ixlib=rb-4.0.3&auto=format&fit=crop&q=80",
-    title: "Musical Evening"
+    url: "../../public/images/Snow-Campus.jpg",
+    title: "USD CAMPUS"
   },
   {
-    url: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&auto=format&fit=crop&q=80",
-    title: "Cultural Festival"
+    url: "../../public/images/USD-44929.jpg",
+    title: "USD CAMPUS"
   }
 ];
 

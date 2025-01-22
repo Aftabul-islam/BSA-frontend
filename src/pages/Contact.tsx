@@ -1,10 +1,19 @@
-import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, MapPin } from 'lucide-react';
+import { Map } from '../components/Map';
+
+const USD_POSITION: [number, number] = [42.7859673, -96.9277769];
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+    console.log(formData);
   };
 
   return (
@@ -22,8 +31,11 @@ export const Contact = () => {
                 <input
                   type="text"
                   id="name"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
                            dark:bg-gray-700 focus:ring-2 focus:ring-[#d21533] focus:border-transparent"
+                  required
                 />
               </div>
               <div>
@@ -33,8 +45,11 @@ export const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
                            dark:bg-gray-700 focus:ring-2 focus:ring-[#d21533] focus:border-transparent"
+                  required
                 />
               </div>
               <div>
@@ -44,8 +59,11 @@ export const Contact = () => {
                 <textarea
                   id="message"
                   rows={6}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
                            dark:bg-gray-700 focus:ring-2 focus:ring-[#d21533] focus:border-transparent"
+                  required
                 ></textarea>
               </div>
               <button
@@ -58,30 +76,33 @@ export const Contact = () => {
             </form>
           </div>
 
-          {/* Contact Information */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-            <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
-            <div className="space-y-6">
-              <div className="flex items-center">
-                <MapPin size={24} className="text-[#d21533] mr-4" />
-                <div>
-                  <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-600 dark:text-gray-400">414 E Clark St, Vermillion, SD 57069</p>
+          {/* Contact Information & Map */}
+          <div className="space-y-8">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+              <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+              <div className="space-y-6 mb-8">
+                <div className="flex items-center">
+                  <MapPin className="text-[#d21533] mr-4 h-6 w-6" />
+                  <div>
+                    <h3 className="font-semibold">Address</h3>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      414 E Clark St<br />
+                      Vermillion, SD 57069
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  <Mail className="text-[#d21533] mr-4 h-6 w-6" />
+                  <div>
+                    <h3 className="font-semibold">Email</h3>
+                    <p className="text-gray-600 dark:text-gray-400">To be posted</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <Phone size={24} className="text-[#d21533] mr-4" />
-                <div>
-                  <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600 dark:text-gray-400">+1 to be posted</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <Mail size={24} className="text-[#d21533] mr-4" />
-                <div>
-                  <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600 dark:text-gray-400">to be posted</p>
-                </div>
+
+              {/* Map Component */}
+              <div className="h-[400px] rounded-lg overflow-hidden">
+                <Map position={USD_POSITION} />
               </div>
             </div>
           </div>
