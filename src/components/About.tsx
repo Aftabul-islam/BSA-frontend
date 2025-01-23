@@ -9,28 +9,28 @@ export const AboutSection = () => {
           <div className="grid grid-cols-3 grid-rows-3 gap-2 h-[400px]">
             <div className="col-span-2 row-span-2 rounded-lg overflow-hidden">
               <img 
-                src="../../images/Bangladesh/BD-1.jpg" 
+                src="public/images/Bangladesh/BD-1.jpg" 
                 alt="BSA Event"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
               <img 
-                src="../../images/Bangladesh/BD-2.jpg" 
+                src="public/images/Bangladesh/BD-2.jpg" 
                 alt="BSA Members"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
               <img 
-                src="../../images/Bangladesh/BD-3.jpg" 
+                src="public/images/Bangladesh/BD-3.jpg" 
                 alt="Cultural Event"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="col-span-2 rounded-lg overflow-hidden">
               <img 
-                src="../../images/Bangladesh/BD-4.jpg" 
+                src="public/images/Bangladesh/BD-4.jpg" 
                 alt="Community Gathering"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
               />

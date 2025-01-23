@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router ,Routes, Route } from 'react-router-dom';
+// import { HashRouter as Router } from 'react-router-dom';  // Change to HashRouter for GitHub Pages
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
@@ -21,7 +22,7 @@ import  PrivateRoute  from './components/PrivateRoute';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/BSA-frontend/">
       <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <Navbar />
         <Routes>
