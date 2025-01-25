@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1504870712357-65ea720d6078?auto=format&fit=crop&q=80",
+    url: "https://images.unsplash.com/photo-1681236533324-666665983996?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJhbmdsYWRlc2hpJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D",
     title: "Classical Performance"
   },
   {
-    url: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80",
+    url: "https://images.unsplash.com/photo-1624635446500-d4c4ec4eb0ce?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjkwfHxiYW5nbGFkZXNofGVufDB8fDB8fHww",
     title: "Festival Celebration"
   },
   {
-    url: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80",
+    url: "https://images.unsplash.com/photo-1621442745928-8f8d98021f35?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Dance Workshop"
   }
 ];
