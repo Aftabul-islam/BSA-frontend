@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
-    base:'/BSA-frontend/',
+    base:'./',
     build: {
       outDir: 'dist',
       assetsDir: 'assets',

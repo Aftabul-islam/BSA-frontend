@@ -22,7 +22,7 @@ import  PrivateRoute  from './components/PrivateRoute';
 
 function App() {
   return (
-    <Router basename="/BSA-frontend/">
+    <Router>
       <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <Navbar />
         <Routes>

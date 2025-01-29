@@ -6,22 +6,22 @@ interface CollageImage {
 
 const collageImages: CollageImage[] = [
   {
-    src: '/BSA-frontend/images/Bangladesh/BD-1.jpg',
+    src: '/images/Bangladesh/BD-1.jpg',
     alt: 'Bangaldesh',
     className: 'col-span-2 row-span-2'
   },
   {
-    src: '/BSA-frontend/images/Bangladesh/BD-2.jpg',
+    src: '/images/Bangladesh/BD-2.jpg',
     alt: 'Bangaldesh',
     className: 'col-span-1 row-span-1'
   },
   {
-    src: '/BSA-frontend/images/Bangladesh/BD-3.jpg',
+    src: '/images/Bangladesh/BD-3.jpg',
     alt: 'Bangaldesh',
     className: 'col-span-1 row-span-1'
   },
   {
-    src: '/BSA-frontend/images/Bangladesh/BD-4.jpg',
+    src: '/images/Bangladesh/BD-4.jpg',
     alt: 'Bangaldesh',
     className: 'col-span-2 row-span-1'
   }
