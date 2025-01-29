@@ -24,6 +24,7 @@ export const ManageGallery: React.FC = () => {
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>, isCover: boolean) => {
     if (e.target.files) {
+      console.log(e.target.files)
       const files = Array.from(e.target.files);
       files.forEach(file => {
         const url = URL.createObjectURL(file);
