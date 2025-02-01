@@ -78,7 +78,9 @@ export const AboutSection = () => {
             </p>
             <p className="text-lg text-gray-600">
               From celebrating traditional festivals to offering academic guidance, BSA plays 
-              a crucial role in enriching the university experience for its members.
+              a crucial role in enriching the university experience for its members. BSA does not follow any discriminatory practice as an organization. Any student of USD is welcomed in BSA to be a member and join all of the events organized by BSA.
+              BSA also plays a vital role by offering voluntary services and support to its members. We welcome new Bangladeshi students and try our best to assist them in coping with campus life and local culture.
+              We aim to give our members the feeling of having an extended family and a dependable support system while living thousands of miles away from home. We also collaborate with friends from other cultural ethnicities on social and cultural grounds. 
             </p>
           </div>
         </div>

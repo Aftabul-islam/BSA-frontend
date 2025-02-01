@@ -32,6 +32,18 @@ const PageHeader = () => (
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Meet the dedicated individuals who make BSA possible
         </p>
+        <a
+          href="https://usdinvolved.usd.edu/organization/bsausd"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-2 mt-6 text-base font-medium text-white bg-[#d21533] 
+             rounded-lg transform transition-all duration-300 hover:bg-[#b01229] 
+             shadow-sm hover:shadow-md active:scale-98
+             focus:outline-none focus:ring-2 focus:ring-[#d21533] focus:ring-offset-2
+             dark:focus:ring-offset-gray-800"
+        >
+          Become a Member
+        </a>
       </div>
     </div>
   </div>
